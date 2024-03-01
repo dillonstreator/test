@@ -1,0 +1,244 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "https://api.medplum.com/fhir/R4/Patient/1ebd55d2-66d7-4018-83ca-43a7dcff33fd",
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "text": "Brenda Nunez Ladinos",
+            "family": "Nunez Ladinos",
+            "given": [
+              "Brenda"
+            ],
+            "use": "official"
+          }
+        ],
+        "communication": [
+          {
+            "preferred": true,
+            "language": {
+              "coding": [
+                {
+                  "system": "https://imaginepediatrics.org/preferred-language",
+                  "display": "Spanish",
+                  "code": "es"
+                }
+              ]
+            }
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+            "valueBoolean": true
+          },
+          {
+            "url": "https://imaginepediatrics.org/caregiver-sms-consent",
+            "valueBoolean": true
+          },
+          {
+            "url": "https://imaginepediatrics.org/password-reset-required",
+            "valueBoolean": true
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "1213 TAMARISK DR"
+            ],
+            "city": "MEXIA",
+            "state": "TX",
+            "postalCode": "76667",
+            "extension": [
+              {
+                "url": "https://imaginepediatrics.org/address-type",
+                "valueCode": "home"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "tag": [
+            {
+              "system": "https://imaginepediatrics.org/patient-type",
+              "code": "caregiver"
+            }
+          ],
+          "versionId": "261384c1-2b3f-4b6e-b373-db00903c91df",
+          "lastUpdated": "2024-03-01T04:20:31.587Z",
+          "author": {
+            "reference": "Practitioner/3b532963-d33f-4d7e-9894-953d9f25ee47",
+            "display": "Jennifer Bahn"
+          },
+          "project": "fc27d50d-623c-48db-aa04-176d9133474e",
+          "compartment": [
+            {
+              "reference": "Project/fc27d50d-623c-48db-aa04-176d9133474e"
+            },
+            {
+              "reference": "Patient/1ebd55d2-66d7-4018-83ca-43a7dcff33fd"
+            }
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(254) 315-5187",
+            "use": "mobile",
+            "extension": [
+              {
+                "url": "https://imaginepediatrics.org/primary-phone",
+                "valueBoolean": false
+              }
+            ]
+          },
+          {
+            "system": "email"
+          }
+        ],
+        "active": true,
+        "id": "1ebd55d2-66d7-4018-83ca-43a7dcff33fd",
+        "link": [
+          {
+            "type": "seealso",
+            "other": {
+              "reference": "RelatedPerson/8c5bcc9e-0c2d-43f9-9832-236f7ee856be"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://api.medplum.com/fhir/R4/Patient/af0c3c45-706f-4970-b2cf-c1eadfa9f690",
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "text": "Thania  Pryer ",
+            "family": "Pryer ",
+            "given": [
+              "Thania "
+            ],
+            "use": "official"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "https://imaginepediatrics.org/preferred-language",
+                  "display": "English",
+                  "code": "en"
+                }
+              ]
+            }
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+            "valueBoolean": false
+          },
+          {
+            "url": "https://imaginepediatrics.org/caregiver-sms-consent",
+            "valueBoolean": true
+          },
+          {
+            "url": "https://imaginepediatrics.org/password-reset-required",
+            "valueBoolean": true
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "6261 SW 144TH LANE RD"
+            ],
+            "city": "OCALA",
+            "state": "FL",
+            "postalCode": "34473",
+            "extension": [
+              {
+                "url": "https://imaginepediatrics.org/address-type",
+                "valueCode": "home"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "tag": [
+            {
+              "system": "https://imaginepediatrics.org/patient-type",
+              "code": "caregiver"
+            }
+          ],
+          "versionId": "f49a74a1-59a8-4e17-b313-db89d7c7893d",
+          "lastUpdated": "2024-03-01T15:53:30.370Z",
+          "author": {
+            "reference": "Practitioner/9e9d841c-a49c-4554-8739-a324f9d049be",
+            "display": "Amayrani Ayala"
+          },
+          "project": "fc27d50d-623c-48db-aa04-176d9133474e",
+          "compartment": [
+            {
+              "reference": "Project/fc27d50d-623c-48db-aa04-176d9133474e"
+            },
+            {
+              "reference": "Patient/af0c3c45-706f-4970-b2cf-c1eadfa9f690"
+            }
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(631) 787-9655",
+            "use": "home",
+            "extension": [
+              {
+                "url": "https://imaginepediatrics.org/primary-phone",
+                "valueBoolean": true
+              }
+            ]
+          },
+          {
+            "system": "phone",
+            "value": "(631) 787-9557",
+            "use": "temp",
+            "extension": [
+              {
+                "url": "https://imaginepediatrics.org/primary-phone",
+                "valueBoolean": false
+              }
+            ]
+          },
+          {
+            "system": "email"
+          }
+        ],
+        "active": true,
+        "id": "af0c3c45-706f-4970-b2cf-c1eadfa9f690",
+        "link": [
+          {
+            "type": "seealso",
+            "other": {
+              "reference": "RelatedPerson/112ad9a2-3d04-4719-a44b-6be52472558e"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://api.medplum.com/fhir/R4/Patient?_count=20&_id=09c8e92d-6b65-4fce-b0c2-4191d074ebef%2C95b7dc03-e220-4ff5-9c37-76424ce689a1%2Caf0c3c45-706f-4970-b2cf-c1eadfa9f690%2Cf394d77e-6c1f-4872-8532-b2a332e23255%2Caf0c3c45-706f-4970-b2cf-c1eadfa9f690%2Cab54020b-2af3-497f-bbc4-ca82f121e5e3%2C53ab82b6-89c1-4343-9c3f-9e274c8bb897%2Ce965afba-d40f-4433-bf41-73f544ef92b0%2Cbeb25d27-0d01-4c24-9ab1-e6cfd92283cc%2Cf3c6276b-95c6-4f5d-95bb-e7638f2d5c18%2C433f3168-6a83-4ba8-beda-4134e69b3c0b%2Ce21444ca-2545-4efd-a859-455117b2a068%2C1ebd55d2-66d7-4018-83ca-43a7dcff33fd%2C1ebd55d2-66d7-4018-83ca-43a7dcff33fd%2C8f5a2b32-3030-4354-9e5e-ba98c9541318%2C1aa1880b-585d-4e01-b9cf-1a4bc9650601&_tag=caregiver"
+    },
+    {
+      "relation": "first",
+      "url": "https://api.medplum.com/fhir/R4/Patient?_count=20&_id=09c8e92d-6b65-4fce-b0c2-4191d074ebef%2C95b7dc03-e220-4ff5-9c37-76424ce689a1%2Caf0c3c45-706f-4970-b2cf-c1eadfa9f690%2Cf394d77e-6c1f-4872-8532-b2a332e23255%2Caf0c3c45-706f-4970-b2cf-c1eadfa9f690%2Cab54020b-2af3-497f-bbc4-ca82f121e5e3%2C53ab82b6-89c1-4343-9c3f-9e274c8bb897%2Ce965afba-d40f-4433-bf41-73f544ef92b0%2Cbeb25d27-0d01-4c24-9ab1-e6cfd92283cc%2Cf3c6276b-95c6-4f5d-95bb-e7638f2d5c18%2C433f3168-6a83-4ba8-beda-4134e69b3c0b%2Ce21444ca-2545-4efd-a859-455117b2a068%2C1ebd55d2-66d7-4018-83ca-43a7dcff33fd%2C1ebd55d2-66d7-4018-83ca-43a7dcff33fd%2C8f5a2b32-3030-4354-9e5e-ba98c9541318%2C1aa1880b-585d-4e01-b9cf-1a4bc9650601&_offset=0&_tag=caregiver"
+    }
+  ]
+}

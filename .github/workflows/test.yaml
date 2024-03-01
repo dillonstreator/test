@@ -1,0 +1,36 @@
+name: workflow test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  user_input:
+    uses: dillonstreator/test/.github/workflows/other.yaml@main
+    with:
+      name: "testing"
+
+  wait:
+    needs: [user_input]
+    runs-on: ubuntu-latest
+    environment: test
+    permissions:
+      actions: write
+    steps:
+      - name: Wait for 5 seconds
+        run: |
+          echo "Waiting for 5 seconds"
+          sleep 5
+  canceller:
+    needs: [wait]
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: "cancel outdated"
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          all_but_latest: true
+          only_status: "waiting"
+          access_token: ${{ github.token }}

@@ -1,0 +1,17 @@
+name: other
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        type: string
+        description: "Name of the person to greet"
+        required: true
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - name: Greet
+        run: echo "Hello, ${{ github.event.inputs.name }}"
